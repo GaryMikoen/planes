@@ -16,6 +16,7 @@ public class Plane {
     public Plane() {
         Long fuel = new Long(5);
         this.fuel = fuel;
+        this.airport = "London";
     }
 
     public Long getId() {
