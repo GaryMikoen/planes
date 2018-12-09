@@ -10,6 +10,7 @@ public class Plane {
     @GeneratedValue
     private Long id;
     private String name;
+    private String airport;
 
     public Plane() {
     }
@@ -30,4 +31,11 @@ public class Plane {
         this.name = name;
     }
 
+    public String getAirport() {
+        return airport;
+    }
+
+    public void setAirport(String airport) {
+        this.airport = airport;
+    }
 }
