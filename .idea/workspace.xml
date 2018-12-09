@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a48c0e8d-5125-4913-bee3-e8992691d2ea" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nl/capgemini/academy/planes/controller/PlaneController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/capgemini/academy/planes/controller/PlaneController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -41,14 +40,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="276" />
+          <entry key="html" value="279" />
           <entry key="java" value="858" />
           <entry key="xml" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="276" />
+          <entry key="HTML" value="279" />
           <entry key="JAVA" value="858" />
           <entry key="XML" value="15" />
         </counts>
@@ -83,11 +82,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/nl/capgemini/academy/planes/controller/PlaneController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="35" column="39" selection-start-line="35" selection-start-column="39" selection-end-line="35" selection-end-column="39" />
+            <state relative-caret-position="306">
+              <caret line="36" column="5" lean-forward="true" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#884#885#0" expanded="true" />
@@ -123,11 +122,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/static/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-5">
-              <caret line="59" column="21" lean-forward="true" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
+            <state relative-caret-position="386">
+              <caret line="143" column="6" lean-forward="true" selection-start-line="143" selection-start-column="6" selection-end-line="143" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -160,8 +159,8 @@
         <option value="$PROJECT_DIR$/src/test/static/index.html" />
         <option value="$PROJECT_DIR$/src/main/java/nl/capgemini/academy/planes/repository/PlaneRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/nl/capgemini/academy/planes/models/Plane.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/index.html" />
         <option value="$PROJECT_DIR$/src/main/java/nl/capgemini/academy/planes/controller/PlaneController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/index.html" />
       </list>
     </option>
   </component>
@@ -424,7 +423,7 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" weight="0.32955465" />
       <window_info id="Image Layers" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.33036438" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.33036438" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.24939272" />
       <window_info anchor="bottom" id="Terminal" order="0" weight="0.3291815" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
@@ -432,7 +431,7 @@
       <window_info anchor="bottom" id="Version Control" order="3" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" />
-      <window_info anchor="bottom" id="Run" order="6" visible="true" weight="0.2935943" />
+      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.2935943" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
@@ -517,10 +516,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/index.html">
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/capgemini/academy/planes/controller/PlaneController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5">
-          <caret line="59" column="21" lean-forward="true" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
+        <state relative-caret-position="306">
+          <caret line="36" column="5" lean-forward="true" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#884#885#0" expanded="true" />
+            <element signature="e#935#936#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -550,15 +554,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/capgemini/academy/planes/controller/PlaneController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="35" column="39" selection-start-line="35" selection-start-column="39" selection-end-line="35" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#884#885#0" expanded="true" />
-            <element signature="e#935#936#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="386">
+          <caret line="143" column="6" lean-forward="true" selection-start-line="143" selection-start-column="6" selection-end-line="143" selection-end-column="6" />
         </state>
       </provider>
     </entry>

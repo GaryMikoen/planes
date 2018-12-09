@@ -94,10 +94,10 @@
 
     var deleteData = function(){
         var planeID = $('#planeID').val();
-        if(planeID == ""){
+        if (planeID == ""){
             return;
         }
-        $.ajax({
+       $.ajax({
             url: "http://localhost:8080/api/plane/delete/" + planeID,
             type: "delete",
             data: JSON.stringify({
@@ -111,6 +111,34 @@
             error: function(result) {
                 console.log(result);
                 window.alert("couldn't crash plane! "+ result.responseText);
+            }
+        });
+    };
+
+    var setAirport = function(){
+        var planeID = $('#planeID').val();
+        if (planeID == ""){
+            return;
+        }
+        var planeAirport = $('#planeAirport').val();
+        if (planeAirport == ""){
+            return;
+        }
+       $.ajax({
+            url: "http://localhost:8080/api/plane/airport/" + planeID,
+            type: "put",
+            data: JSON.stringify({
+                id:planeID,
+                id:planeAirport
+            }),
+            contentType: "application/json",
+            success: function(result) {
+                $('#planeID').val("");
+                getData();
+            },
+            error: function(result) {
+                console.log(result);
+                window.alert("couldn't change airport! "+ result.responseText);
             }
         });
     };
