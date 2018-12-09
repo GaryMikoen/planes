@@ -31,7 +31,7 @@
 </p>
 
 <p>
-    <button onclick="stockholm()"> fly to Stockholm</button>
+    <button onclick="setAirportToStockholm()"> fly to Stockholm</button>
     <label for="planeID2">plane id: </label><input type="text" id="planeID2" />
 </p>
 
@@ -120,7 +120,7 @@
         });
     };
 
-    var setAirport = function(){
+    var setAirportToStockholm = function(){
         var planeID2 = $('#planeID2').val();
         if (planeID2 == ""){
             return;
