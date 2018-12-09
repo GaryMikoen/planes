@@ -11,9 +11,11 @@ public class Plane {
     private Long id;
     private String name;
     private String airport;
-    private double fuel;
+    private Long fuel;
 
     public Plane() {
+        Long fuel = new Long(5);
+        this.fuel = fuel;
     }
 
     public Long getId() {
@@ -40,11 +42,11 @@ public class Plane {
         this.airport = airport;
     }
 
-    public double getFuel() {
+    public Long getFuel() {
         return fuel;
     }
 
-    public void setFuel(double fuel) {
+    public void setFuel(Long fuel) {
         this.fuel = fuel;
     }
 }
