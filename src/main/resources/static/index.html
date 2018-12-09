@@ -35,6 +35,11 @@
     <label for="planeID2">plane id: </label><input type="text" id="planeID2" />
 </p>
 
+<p>
+    <button onclick="setAirportToAmsterdam()"> fly to Amsterdam</button>
+    <label for="planeID3">plane id: </label><input type="text" id="planeID3" />
+</p>
+
 <div id="planes"></div>
 
 <table id="table_id" class="display">
@@ -139,6 +144,33 @@
             error: function(result) {
                 console.log(result);
                 window.alert("couldn't fly to Stockholm! "+ result.responseText);
+            }
+        });
+    };
+
+    $(document).ready( function () {
+        $('#table_id').DataTable();
+    } );
+
+    var setAirportToAmsterdam = function(){
+        var planeID3 = $('#planeID3').val();
+        if (planeID3 == ""){
+            return;
+        }
+       $.ajax({
+            url: "http://localhost:8080/api/plane/amsterdam/" + planeID3,
+            type: "put",
+            data: JSON.stringify({
+                id:planeID3
+            }),
+            contentType: "application/json",
+            success: function(result) {
+                $('#planeID3').val("");
+                getData();
+            },
+            error: function(result) {
+                console.log(result);
+                window.alert("couldn't fly to Amsterdam! "+ result.responseText);
             }
         });
     };

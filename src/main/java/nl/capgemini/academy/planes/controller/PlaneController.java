@@ -35,6 +35,13 @@ public class PlaneController {
         plane.setAirport("Stockholm");
         this.planeRepository.save(plane);
     }
+
+    @RequestMapping(value ="amsterdam/{id}", method = RequestMethod.PUT)
+    public void setAirportToAmsterdam(@PathVariable long id){
+        Plane plane = this.planeRepository.findById(id).get();
+        plane.setAirport("Amsterdam");
+        this.planeRepository.save(plane);
+    }
 }
 
 
