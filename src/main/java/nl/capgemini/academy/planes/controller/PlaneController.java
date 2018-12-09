@@ -2,10 +2,7 @@ package nl.capgemini.academy.planes.controller;
 
 import nl.capgemini.academy.planes.models.Plane;
 import nl.capgemini.academy.planes.repository.PlaneRepository;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("api/plane/")
@@ -25,6 +22,11 @@ public class PlaneController {
     @RequestMapping(value = "", method = RequestMethod.POST)
     public void create(@RequestBody Plane plane){
         this.planeRepository.save(plane);
+    }
+
+    @RequestMapping(value ="delete/{id}", method = RequestMethod.DELETE)
+    public void delete(@PathVariable String id){
+        this.planeRepository.deleteById(id);
     }
 
 }

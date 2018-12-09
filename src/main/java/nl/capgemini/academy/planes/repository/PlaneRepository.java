@@ -7,6 +7,6 @@ import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 import org.springframework.stereotype.Repository;
 
 @RepositoryRestResource(path = "plane")
-public interface PlaneRepository extends JpaRepository<Plane, Long> {
+public interface PlaneRepository extends JpaRepository<Plane, String> {
     Iterable<Plane> findAllByName(String name);
 }
