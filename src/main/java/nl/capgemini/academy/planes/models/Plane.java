@@ -11,6 +11,7 @@ public class Plane {
     private Long id;
     private String name;
     private String airport;
+    private double fuel;
 
     public Plane() {
     }
@@ -37,5 +38,13 @@ public class Plane {
 
     public void setAirport(String airport) {
         this.airport = airport;
+    }
+
+    public double getFuel() {
+        return fuel;
+    }
+
+    public void setFuel(double fuel) {
+        this.fuel = fuel;
     }
 }
