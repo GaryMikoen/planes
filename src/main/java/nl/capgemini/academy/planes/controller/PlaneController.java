@@ -29,6 +29,12 @@ public class PlaneController {
         this.planeRepository.deleteById(id);
     }
 
+    @RequestMapping(value ="airport/{id}", method = RequestMethod.PUT)
+    public void setAirport(@PathVariable long id, String airport){
+        Plane plane = this.planeRepository.findById(id).get();
+        plane.setAirport(airport);
+        this.planeRepository.save(plane);
+    }
 }
 
 
