@@ -25,7 +25,7 @@ public class PlaneController {
     }
 
     @RequestMapping(value ="delete/{id}", method = RequestMethod.DELETE)
-    public void delete(@PathVariable String id){
+    public void delete(@PathVariable long id){
         this.planeRepository.deleteById(id);
     }
 
