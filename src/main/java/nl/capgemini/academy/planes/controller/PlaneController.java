@@ -33,6 +33,7 @@ public class PlaneController {
     public void setAirportToStockholm(@PathVariable long id){
         Plane plane = this.planeRepository.findById(id).get();
         plane.setAirport("Stockholm");
+        plane.setFuel(plane.getFuel()-1);
         this.planeRepository.save(plane);
     }
 
@@ -40,6 +41,7 @@ public class PlaneController {
     public void setAirportToAmsterdam(@PathVariable long id){
         Plane plane = this.planeRepository.findById(id).get();
         plane.setAirport("Amsterdam");
+        plane.setFuel(plane.getFuel()-1);
         this.planeRepository.save(plane);
     }
 }
