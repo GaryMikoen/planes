@@ -30,6 +30,11 @@
     <label for="planeID">plane id: </label><input type="text" id="planeID" />
 </p>
 
+<p>
+    <button onclick="stockholm()"> fly to Stockholm</button>
+    <label for="planeID2">plane id: </label><input type="text" id="planeID2" />
+</p>
+
 <div id="planes"></div>
 
 <table id="table_id" class="display">
@@ -116,29 +121,24 @@
     };
 
     var setAirport = function(){
-        var planeID = $('#planeID').val();
-        if (planeID == ""){
-            return;
-        }
-        var planeAirport = $('#planeAirport').val();
-        if (planeAirport == ""){
+        var planeID2 = $('#planeID2').val();
+        if (planeID2 == ""){
             return;
         }
        $.ajax({
-            url: "http://localhost:8080/api/plane/airport/" + planeID,
+            url: "http://localhost:8080/api/plane/stockholm/" + planeID2,
             type: "put",
             data: JSON.stringify({
-                id:planeID,
-                id:planeAirport
+                id:planeID2
             }),
             contentType: "application/json",
             success: function(result) {
-                $('#planeID').val("");
+                $('#planeID2').val("");
                 getData();
             },
             error: function(result) {
                 console.log(result);
-                window.alert("couldn't change airport! "+ result.responseText);
+                window.alert("couldn't fly to Stockholm! "+ result.responseText);
             }
         });
     };
